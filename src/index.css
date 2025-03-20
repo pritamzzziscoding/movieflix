@@ -1,0 +1,198 @@
+@import "tailwindcss";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    font-family: monospace;
+    text-decoration: none;
+}
+
+/* NAVBAR */
+
+.navigator{
+    color: #F5EFE7;
+}
+
+.navbar{
+    color: #F5EFE7;
+    font-size: 1.7rem;
+    margin: auto;
+    width: 90%;
+    height: 5rem;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #213555;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.header-title, .header-menu-close, .header-menu-open, .hamburger{
+    margin: 0px 30px 0px 30px;
+}
+
+.header-title{
+    font-size: 2rem;
+}
+
+.hamburger{
+    display: none;
+
+}
+.header-menu-close, .header-menu-open{
+    display: flex;
+    gap: 30px;
+}
+
+@media screen and (max-width: 768px){
+    .hamburger{
+        font-size: 2.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .header-menu-close{
+        display: none;
+    }
+
+    .header-menu-open{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        background-color: #F5EFE7;
+        position: absolute;
+        top: 5rem;
+        left: 5%;
+        margin: 0px;
+        gap: 5px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        z-index: 1;
+    }
+
+    .navigator{
+        color: #213555;
+    }
+}
+
+.active{
+    color: rgb(33, 167, 15);
+    border-bottom: 3px solid rgb(33, 167, 15);
+}
+
+/* FOOTER */
+
+.footer{
+    padding: 30px;
+    color: #F5EFE7;
+    background-color: #213555;
+    margin: auto;
+    width: 90%;
+}
+
+.box{
+    width: 90%;
+    margin: auto;
+    background-color: #EEEEEE;
+}
+
+
+.card-container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: max(15%, 150px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.home{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/50fcc930-ba3f-4cae-9257-9f920e30a998/web/IN-en-20250310-TRIFECTA-perspective_739387a0-ff14-44ed-a5af-36e5aa4d236e_large.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    padding: 10rem;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 5rem;
+    left: 5%;
+    width: 90%;
+    height: 650px;
+    background: rgba(0, 0, 0, 0.75); /* Adjust opacity (0 = fully transparent, 1 = solid) */
+}
+
+/* Ensuring content stays on top */
+.home * {
+    position: relative;
+}
+
+.explore{
+    padding: 1rem;
+}
+
+.contact{
+    width: 90%;
+    margin: auto;
+    background-color: #EEEEEE;
+    padding: 2rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+}
+
+input, textarea{
+    background-color: whitesmoke;
+    resize: none;
+    width: 90%;
+}
+
+textarea{
+    height: 300px;
+}
+
+.about{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/50fcc930-ba3f-4cae-9257-9f920e30a998/web/IN-en-20250310-TRIFECTA-perspective_739387a0-ff14-44ed-a5af-36e5aa4d236e_large.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    padding: 40px;
+}
+
+.about::before {
+    content: "";
+    position: absolute;
+    top: 5rem;
+    left: 5%;
+    width: 90%;
+    height: 650px;
+    background: rgba(0, 0, 0, 0.75); /* Adjust opacity (0 = fully transparent, 1 = solid) */
+}
+
+/* Ensuring content stays on top */
+.about * {
+    position: relative;
+}
+
+.watch{
+    padding: 0.7rem;
+    cursor: pointer;
+}
+
+.detail{
+    padding: 1rem;
+}
+
+.detail-img{
+    margin: auto;
+}
