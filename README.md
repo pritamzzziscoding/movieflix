@@ -17,7 +17,7 @@ A simple movie application built using React, React Router, and Tailwind CSS.
 1. **Clone the repository**  
    ```sh
    git clone https://github.com/pritamzzziscoding/movieflix.git
-   cd todo-app
+   cd movieflix
 2. **Install the dependencies**
     ```sh
     bun install
